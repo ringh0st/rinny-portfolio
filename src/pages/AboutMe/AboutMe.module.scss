@@ -1,0 +1,37 @@
+.home {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f0f0f0;
+
+  .quickBioSection {
+    padding: 40px 20px;
+    background-color: rgba(29, 30, 37, 0.9);
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .bioTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Cinzel', serif; /* Or your chosen medieval font */
+  }
+
+  .quickBio {
+    max-width: 800px; /* Adjust for readability */
+    margin: 0 auto; /* Center the content */
+    font-family: 'Roboto', sans-serif; /* Use a clean, readable font */
+  }
+
+  .quickBio p {
+    font-size: 1.2rem;
+    line-height: 1.6; /* Improve readability */
+    margin: 15px 0; /* Space between paragraphs */
+  }
+
+  .quickBio em {
+    font-style: italic; /* Emphasize book titles */
+    color: #F69B82; /* Optional color for emphasis */
+  }
+}

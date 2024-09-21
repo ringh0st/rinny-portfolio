@@ -1,8 +1,8 @@
 // src/components/HamburgerMenu/HamburgerMenu.jsx
 
 import React, { useState } from 'react';
-import styles from './HamburgerMenu.module.scss'; // For CSS Modules
-
+import styles from './Hamburger.module.scss'; // For CSS Modules
+import {Link} from "react-router-dom";
 const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -11,7 +11,7 @@ const HamburgerMenu = () => {
     };
 
     return (
-        <nav className={styles.navbar}>
+        <nav className={`${styles.navbar} ${isOpen ? styles.active : ''}`}>
             <button className={`${styles.hamburger} ${isOpen ? styles.active : ''}`} onClick={toggleMenu}
                     aria-label="Toggle Navigation">
                 <span className={`${styles.line} ${styles.line1}`}></span>
@@ -19,8 +19,9 @@ const HamburgerMenu = () => {
                 <span className={`${styles.line} ${styles.line3}`}></span>
             </button>
             {isOpen && (
-                <ul className={styles.navMenu}>
-                    <li><a href="#">About</a></li>
+                <ul className={styles['nav-menu']}>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about-me">About Me</Link></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>

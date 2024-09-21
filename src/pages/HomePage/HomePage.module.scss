@@ -1,11 +1,34 @@
 /* src/pages/HomePage/HomePage.module.scss */
 
 .home {
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #f0f0f0;
+
+  /* Header.module.scss */
+
+  .portfolioHeader {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(29, 30, 37, 0.8);
+    color: #ffffff;
+    font-family: 'MedievalSharp', serif; /* Medieval font for the header */
+  }
+
+  .headerTitle {
+    font-size: 2.5rem;
+    margin: 0;
+    font-style: italic; /* Adds a storytelling vibe */
+  }
+
+  .headerSubtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Old Standard TT', serif; /* Elegant font for the subtitle */
+  }
 
   .homeHero {
     text-align: center;

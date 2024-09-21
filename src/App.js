@@ -2,19 +2,21 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from "./pages/HomePage/HomePage";
-import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu";
+import Hamburger from "./components/Hamburger/Hamburger";
+import AboutMe from './pages/AboutMe/AboutMe'; // Adjust the import as needed
 
 function App() {
-    return (
-        <div className="App">
-            <Router>
-                <HamburgerMenu /> {/* Add the HamburgerMenu component */}
-                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                </Routes>
-            </Router>
-        </div>
-    );
+  return (
+      <div className="App">
+        <Router>
+          <Hamburger />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about-me" element={<AboutMe />} />
+          </Routes>
+        </Router>
+      </div>
+  );
 }
 
 export default App;
