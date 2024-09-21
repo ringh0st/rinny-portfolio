@@ -10,22 +10,24 @@ const HamburgerMenu = () => {
         setIsOpen(prevState => !prevState);
     };
 
+    const closeMenu = () => {
+        setIsOpen(prevState => !prevState);
+    };
+
     return (
-        <nav className={`${styles.navbar} ${isOpen ? styles.active : ''}`}>
+        <nav className={styles.navbar}>
             <button className={`${styles.hamburger} ${isOpen ? styles.active : ''}`} onClick={toggleMenu}
                     aria-label="Toggle Navigation">
-                <span className={`${styles.line} ${styles.line1}`}></span>
-                <span className={`${styles.line} ${styles.line2}`}></span>
-                <span className={`${styles.line} ${styles.line3}`}></span>
+                <span className={styles.line}></span>
+                <span className={styles.line}></span>
+                <span className={styles.line}></span>
             </button>
-            {isOpen && (
-                <ul className={styles['nav-menu']}>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about-me">About Me</Link></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            )}
+            <ul className={`${styles.navMenu} ${isOpen ? styles.open : ''}`}>
+                <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+                <li><Link to="/about-me" onClick={closeMenu}>About Me</Link></li>
+                <li><a href="#" onClick={closeMenu}>Projects</a></li>
+                <li><a href="#" onClick={closeMenu}>Contact</a></li>
+            </ul>
         </nav>
     );
 };

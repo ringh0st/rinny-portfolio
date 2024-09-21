@@ -19,9 +19,9 @@ const HomePage = () => {
             {/*    <p></p>*/}
             {/*</section>*/}
 
-            <section className={styles.homeProjects}>
-                <h2>Recent Projects</h2>
-            </section>
+            {/*<section className={styles.homeProjects}>*/}
+            {/*    <h2>Recent Projects</h2>*/}
+            {/*</section>*/}
 
             {/*<section className={styles.homeAbout}>*/}
 
