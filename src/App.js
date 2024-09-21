@@ -11,8 +11,8 @@ function App() {
         <Router>
           <Hamburger />
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about-me" element={<AboutMe />} />
+            <Route path="/rinny-portfolio/" element={<HomePage />} />
+            <Route path="/rinny-portfolio/about-me" element={<AboutMe />} />
           </Routes>
         </Router>
       </div>

@@ -20,8 +20,8 @@ const HamburgerMenu = () => {
             </button>
             {isOpen && (
                 <ul className={styles['nav-menu']}>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about-me">About Me</Link></li>
+                    <li><Link to="/rinny-portfolio/">Home</Link></li>
+                    <li><Link to="/rinny-portfolio/about-me">About Me</Link></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
