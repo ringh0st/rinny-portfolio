@@ -1,0 +1,54 @@
+// src/pages/HomePage.scss
+.home {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .home-hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    .home-cta {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .home-projects,
+  .home-about {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 20px;
+    text-align: left;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
