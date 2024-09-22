@@ -27,7 +27,7 @@ const HomePage = () => {
             {/*</section>*/}
             <main className={styles.home}>
                 <section>
-                    <Button onClick={handlePrimaryClick} variant="primary" text="Explore More.."/>
+                    <Button onClick={handlePrimaryClick} variant="primary" text="Explore My Work"/>
                 </section>
             </main>
 
