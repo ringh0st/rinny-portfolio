@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .App-logo {

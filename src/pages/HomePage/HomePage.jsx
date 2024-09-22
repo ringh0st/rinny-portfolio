@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from './HomePage.module.scss';
 import Button from "../../components/Button/Button";  // CSS Modules
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
+    const navigate = useNavigate();
 
     const handlePrimaryClick = () => {
         console.log('Primary Button Clicked');
+        navigate('/projects');
     };
 
     return (
