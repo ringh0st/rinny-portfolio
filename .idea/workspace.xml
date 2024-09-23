@@ -36,6 +36,13 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="2cecca23-563e-4f7d-80e6-17796114282f" />
   </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ringh0st/rinny-portfolio.git&quot;,
@@ -137,7 +144,7 @@
       <workItem from="1713275123261" duration="71000" />
       <workItem from="1726937687572" duration="26048000" />
       <workItem from="1727039908622" duration="313000" />
-      <workItem from="1727098915236" duration="325000" />
+      <workItem from="1727098915236" duration="646000" />
     </task>
     <task id="LOCAL-00001" summary="pushing components">
       <option name="closed" value="true" />

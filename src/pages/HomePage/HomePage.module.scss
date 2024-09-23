@@ -1,0 +1,79 @@
+/* src/pages/HomePage/HomePage.module.scss */
+
+.home {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f0f0f0;
+
+  /* Header.module.scss */
+
+  .portfolioHeader {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(29, 30, 37, 0.8);
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+  }
+
+  .headerTitle {
+    font-size: 2rem;
+    margin: 0;
+    font-style: italic; /* Adds a storytelling vibe */
+  }
+
+  .headerSubtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .homeHero {
+    text-align: center;
+    padding: 50px 20px;
+    //background: #f4f4f4;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    .homeCta {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .homeProjects,
+  .homeAbout {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 20px;
+    text-align: left;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
